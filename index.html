@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="herbert">
+    <meta name="description" content="site feito para você aluno saber se você passou na escola ou não venha ver se você passou ou repetiu">
+    <meta name="robots" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular - Media</title>
+    <link rel="stylesheet" href="style.css">
+    <!--colocar favicon-->
+</head>
+<body>
+    <header>
+        <h1>Calcular Media</h1>
+    </header>
+    <main>
+        <section>
+            <form action="">
+                <p>Nota 1: <input type="number" id="cxnota1" autofocus onblur="verificanumber()" step="0.1" placeholder="ex: 5" max="10" required></p>
+                <p>Nota 2: <input type="number" id="cxnota2" autofocus onblur="verificanumber()" step="0.1" placeholder="ex: 6" max="10" required></p>
+                <p class="btn"><input type="submit" value="Calcular" id="enviar">
+                    <input type="reset" value="Limpar" id="limpa">
+                </p>
+            </form>
+            <p style="text-align: center;">Média</p>
+            <p id="nota" class="reslt">8</p>
+            <p id="reslt" class="reslt">Status</p>
+        </section>
+        <p id="alerta"></p>
+    </main>
+    <footer>
+        <p>&copy; - Desenvolvido por <a href="https://www.linkedin.com/in/herbert-souza-220268268/" target="_blank">herbert Souza</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
