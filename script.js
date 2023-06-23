@@ -58,7 +58,7 @@ button.addEventListener("click", function (event) {
         text.textContent = verificarmedia()
 
         //passar a media para o dom
-        nota_final.textContent = media
+        nota_final.textContent = media.toFixed(2)
 
         //trocar de cor nos status esta feito
     
@@ -97,6 +97,7 @@ apaga.addEventListener("click", function () {
     text.classList.remove("Aprovado")
     text.classList.add("off")
     text.textContent = "Status"
+    nota_final.textContent = "Nota final"
     auxilia = false;
 })
 
